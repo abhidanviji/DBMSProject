@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8"/>
+		<title> Custom audio player </title>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<audio id="mytrack" ontimeupdate='updateTrackTime(this);'>
+				<source src="../audio/nm.mp3" type="audio/mp3"/>
+			</audio>
+			<nav>
+			<div id="waveform"></div>
+				<div id="defaultBar">
+					<div id="progressBar"></div>
+				</div>
+				<div id="buttons">
+					<button type="button" id="playButton"></button>
+					<button type="button" id="rwdButton"></button>
+					<button type="button" id="fwdButton"></button>
+					<span id="currentTime">0:00</span>/<span id="fullDuration">0:00</span>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<button type="button" id="muteButton"></button>
+					<input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+				</div>
+				<div id = "extras">
+				&nbsp&nbsp&nbsp&nbsp
+					<button type="button" id="likeButton"></button>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<button type="button" id="dislikeButton"></button>
+				</div>
+			</nav>
+		</div>
+		<script type="text/javascript" src="controls.js"></script>
+		<form action = 'login.jsp' method = post>
+		<input type = "submit" value="Login"/>
+		</form>
+	</body>
+</html>

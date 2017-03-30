@@ -1,0 +1,113 @@
+body{
+	top:200px;
+	position:relative;
+	background-color:#101010;
+}
+
+#wrapper{
+	width:640px;
+	margin:10px auto; 
+}
+
+nav{
+	background-color:rgb(250,250,250);
+	width:640px;
+	padding-bottom:10px;
+}
+
+
+#defaultBar{
+	width:640px;
+	position:relative;
+	background-color:#606060;
+	height:10px;
+}
+
+#progressBar{
+	position:absolute;
+	height:10px;
+	background-color:#3498db;
+	width:0px;
+}
+
+#playButton{
+	position:relative;
+	background-color:rgb(250,250,250);
+	border:none;
+	height:32px;
+	width:32px;
+	background-image:url(../images/media_play.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	outline:none;
+}
+
+#muteButton{
+	position:relative;
+	background-color:rgb(250,250,250);
+	border:none;
+	height:32px;
+	width:32px;
+	background-image:url(../images/speaker.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	outline:none;
+}
+
+#fwdButton{
+	position:relative;
+	background-color:rgb(250,250,250);
+	border:none;
+	height:32px;
+	width:32px;
+	background-image:url(../images/forward.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	outline:none;
+}
+
+#rwdButton{
+	position:relative;
+	background-color:rgb(250,250,250);
+	border:none;
+	height:32px;
+	width:32px;
+	background-image:url(../images/rewind.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	outline:none;
+}
+
+#likeButton{
+	position:relative;
+	background-color:rgb(250,250,250);
+	border:none;
+	height:32px;
+	width:32px;
+	background-image:url(../images/like.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	outline:none;
+}
+
+#dislikeButton{
+	position:relative;
+	background-color:rgb(250,250,250);
+	border:none;
+	height:32px;
+	width:32px;
+	background-image:url(../images/dislike.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	outline:none;
+}
+
+#muteButton:active,#playButton:active,#fwdButton:active,#rwdButton:active,#likeButton:active,#dislikeButton:active{
+	position:relative;
+	top:2px;
+}
+
+input#volumeslider{ 
+width: 100px;
+}
+
